@@ -18,7 +18,7 @@ let button;
 let timeLeft;
 let label;
 
-const winnMessage = () => `${currentPlayer} has won!`
+const winnMessage = () => `${currentPlayer.innerHTML} has won!`
 const nobodyWinsMessage = () => `it's a draw!`
 
 function countdown() {
@@ -52,6 +52,32 @@ function countdown() {
   
   document.addEventListener("DOMContentLoaded", init, false);
 
+
+  // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("instructions");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 // ----------------------------------  BEGIN GAME ----------------------------------
 
 
@@ -240,8 +266,13 @@ function winnActions(winner) {
     console.log(winner)
 
     gameActive = false
+    if (currentPlayer === 'X'){
+        currentPlayer = player1
+    }
+    else currentPlayer = player2
+    console.log(currentPlayer)
     statusDisplay.innerHTML = winnMessage()
-    clearTimeout(timer);
+    clearTimeout(timer)
     statusDisplay.style.color = '#006400'
 
     let cell
@@ -283,8 +314,13 @@ let handleRestart = () => {
     playField.removeChild(document.getElementById('container'))
 }
 
+
+
 // ----------------------------------  BUTTON LISTENERS ----------------------------------
 
 document.querySelector('#start').addEventListener('click', handleStart)
 document.querySelector('#playAgain').addEventListener('click', handlePlayAgain)
 document.querySelector('#restart').addEventListener('click', handleRestart)
+document.querySelector( "#retrobg-sun" ).onclick = () => {
+document.querySelector( "#retrobg" ).classList.toggle( "retrobg-shutdown" );
+  };

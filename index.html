@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color:black">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta name="description" content="Tic Tac Toe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,38 +13,226 @@
         rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1 id="title">Tic Tac Toe</h1>
+
+  <div id="retrobg">
+    <div id="retrobg-sky">
+      <div id="retrobg-stars">
+        <div class="retrobg-star" style="left:  5%; top: 55%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left:  7%; top:  5%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 10%; top: 45%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 12%; top: 35%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 15%; top: 39%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 20%; top: 10%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 35%; top: 50%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 40%; top: 16%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 43%; top: 28%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 45%; top: 30%; transform: scale( 3 );"></div>
+        <div class="retrobg-star" style="left: 55%; top: 18%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 60%; top: 23%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 62%; top: 44%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 67%; top: 27%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 75%; top: 10%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 80%; top: 25%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 83%; top: 57%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 90%; top: 29%; transform: scale( 2 );"></div>
+        <div class="retrobg-star" style="left: 95%; top:  5%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 96%; top: 72%; transform: scale( 1 );"></div>
+        <div class="retrobg-star" style="left: 98%; top: 70%; transform: scale( 3 );"></div>
+      </div>
+      <div id="retrobg-sunWrap">
+        <div id="retrobg-sun"></div>
+      </div>
+      <div id="retrobg-mountains">
+        <div id="retrobg-mountains-left" class="retrobg-mountain"></div>
+        <div id="retrobg-mountains-right" class="retrobg-mountain"></div>
+      </div>
+      <div id="retrobg-cityWrap">
+        <div id="retrobg-city">
+          <div style="left:  4.0%; height: 20%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left:  6.0%; height: 50%; width: 1.5%;" class="retrobg-building"></div>
+          <div style="left:  8.0%; height: 25%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 12.0%; height: 30%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 13.0%; height: 55%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 17.0%; height: 20%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 18.5%; height: 70%; width: 1.5%;" class="retrobg-building"></div>
+          <div style="left: 20.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 21.5%; height: 80%; width: 2.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 25.0%; height: 60%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 28.0%; height: 40%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 30.0%; height: 70%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 35.0%; height: 65%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 38.0%; height: 40%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 42.0%; height: 60%; width: 2.0%;" class="retrobg-building"></div>
+          <div style="left: 43.0%; height: 85%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 45.0%; height: 40%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 48.0%; height: 25%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 50.0%; height: 80%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 52.0%; height: 32%; width: 5.0%;" class="retrobg-building"></div>
+          <div style="left: 55.0%; height: 55%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 58.0%; height: 45%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 61.0%; height: 90%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 66.0%; height: 99%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 69.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 73.5%; height: 90%; width: 2.0%;" class="retrobg-building"></div>
+          <div style="left: 72.0%; height: 70%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 75.0%; height: 60%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 80.0%; height: 40%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 83.0%; height: 70%; width: 4.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 87.0%; height: 60%; width: 3.0%;" class="retrobg-building retrobg-antenna"></div>
+          <div style="left: 93.0%; height: 50%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 91.0%; height: 30%; width: 4.0%;" class="retrobg-building"></div>
+          <div style="left: 94.0%; height: 20%; width: 3.0%;" class="retrobg-building"></div>
+          <div style="left: 98.0%; height: 35%; width: 2.0%;" class="retrobg-building"></div>
+        </div>
+      </div>
+    </div>
+    <div id="retrobg-ground">
+      <div id="retrobg-linesWrap">
+        <div id="retrobg-lines">
+          <div id="retrobg-vlines">
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+            <div class="retrobg-vline"></div>
+          </div>
+          <div id="retrobg-hlines">
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+            <div class="retrobg-hline"></div>
+          </div>
+        </div>
+      </div>
+      <div id="retrobg-groundShadow"></div>
+    </div>
+  <div>
+
+  <h1 class="mint" id="title">Tic Tac Toe</h1>
+  <h2 class="grays" id="title">Written by Tomer Grossman & Oriel Somech</h2>
   <main>
+
+    
+
     <section id="startBox" class="sidebar">
-      <label for="player1_name">Player 1:</label>
+      <label for="player1_name"><b>Player 1:</b></label>
       <input type="text" id="player1_name" maxlength="20" placeholder="Player 'X'"/>
-      <label for="player2_name">Player 2:</label>
+      <label for="player2_name"><b>Player 2:</b></label>
       <input type="text" id="player2_name" maxlength="20" placeholder="Player 'O'"/>
       <button id="start" class="button_box">START</button>
     </section>
     <section id="field">
     </section>
     <section class="sidebar">
-      <p id="player1" class="button_box">-</p>
-      <p id="player2" class="button_box">-</p>
+      <b><p id="player1" class="button_box">-</p></b>
+      <b><p id="player2" class="button_box">-</p></b>
       <div id="turns">
-        <p id="titleTurns">Number of turns</p>
-        <p id="numberTurns">0</p>
+        <b><p id="titleTurns"><b>Number of turns</b></p>
+        <b><p id="numberTurns">0</b></p>
       </div>
       <h2 id="status"></h2>
       <button id="playAgain" class="button_box">PLAY AGAIN</button>
       <button id="restart" class="button_box">RESTART</button>
-      <div id="game-board">
+      <button id="instructions" class="button_box">Instructions</button>
+      <!-- Trigger/Open The Modal -->
+      
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p><h1>Tic Tac Toe - Instructions</h1>
+            You probably already know how to play Tic-Tac-Toe.<br> However, if you have forgotten, we are here to help :)<br>
+            It's a really simple game, isn't it? That's what most people think.<br>
+            But if you really wrap your brain around it, you'll discover that Tic-Tac-Toe isn't quite as simple as you think!<br>
+            Tic-Tac-Toe involves looking ahead and trying to figure out what the person playing against you might do next.<br>
+            The game is played on a grid that's 3 squares by 3 squares.<br>
+            You are X, your friend is O. Players take turns putting their marks in empty squares.<br>
+            The first player to get 3 of it's marks in a row (up, down, across, or diagonally) is the winner.<br>
+            When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie ( = draw).<br><br>
+            <h2 align="center">How can I win at Tic-Tac-Toe?</h2><br><br>
+            To beat the opponent (or at least tie), you need to make use of a little bit of strategy.<br>
+            Strategy means figuring out what you need to do to win.<br>
+            Part of your strategy is trying to figure out how to get three X's in a row.<br>
+            The other part is trying to figure out how to stop the opponent from getting three O's in a row.<br>
+            After you put an X in a square, you start looking ahead.<br>
+            Where's the best place for your next X?<br>You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.<br>
+            You also have to watch where the opponent puts its O.<br>
+            That could change what you do next. <br>If the opponent gets two Os in a row, you have to put your next X in the last empty square in that row, or the opponent will win.<br>
+            You are forced to play in a particular square or lose the game.<br><br>
+            
+          <h2 align="center">Be careful - Time is Limited</h2> <br>Every turn has a limited time of 30 seconds so watch out to play within your time limit or you will loose the game entirely, <br>no matter which side missed the time!<br><br>
+            
+            You can see how much time is left by the countdown timer.<br>
+            
+            If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. <br>You may not win, but at least you'll tie.<br><br>
+            Notice - if you clicked on the instructions button while actively playing - the timer is still counting down!<br>Enjoy the game! </p>
+        </div>
       </div>
-      <div id="output">
-        Time left: <span id="label"><span>
-      </div>
-    </section>
-  </main>
-
   <script src="game_script.js"></script>
+<!-- </div> -->
+<div id="game-board">
+</div>
+<div id="output">
+  <b style="color:rgb(255, 9, 9)">Time left: <span id="label"><span></b>
+    <p style="color:rgb(148, 0, 217)">Click on the sun <br> Dark Mode</p>
+</div>
+</section>
+</main>
 </body>
 
 </html>
