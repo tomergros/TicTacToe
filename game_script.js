@@ -20,6 +20,23 @@ let label;
 
 const winnMessage = () => `${currentPlayer.innerHTML} has won!`
 const nobodyWinsMessage = () => `it's a draw!`
+  // Get the modal
+  let modal1 = document.getElementById("myModal2");
+  
+  // Get the <span> element that closes the modal
+  let span1 = document.getElementsByClassName("close1")[0];
+  
+//   // When the user clicks on <span> (x), close the modal
+  span1.onclick = function() {
+    modal1.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal1) {
+      modal1.style.display = "none";
+    }
+  }
 
 function countdown() {
     if (timeLeft) {
@@ -27,12 +44,14 @@ function countdown() {
       timeLeft--
       timer = setTimeout(countdown, 1000);
     } else {
+      modal1.style.display = "block";
       label.innerHTML = "<br/><br/>You Lost<br/><br/>Please Choose:<br/>'Play Again' or 'Restart'"
       timer = undefined
       gameActive = false
     }
   }
   
+
   function takeMove() {
     // timer is undefined if the game is not started
     if (typeof(timer) === "undefined") {
@@ -220,6 +239,7 @@ let handlePlayerSwitch = () => {
     if (currentPlayer === 'X') {
         player1.style.background = '#FF1493'
         player2.style.background = '#FFC0CB'
+        
     } else {
         player1.style.background = '#FFC0CB'
         player2.style.background = '#FF1493'
@@ -255,10 +275,7 @@ let handleClick = (event) => {
         isMovesLeft()
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X'
         handlePlayerSwitch()}
-    
-
-    // console.log(gameState)
-}
+    }
 
 // ----------------------------------  SHOW RESULTS ----------------------------------
 

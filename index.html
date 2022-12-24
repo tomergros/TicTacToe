@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <p style="color:rgb(218, 166, 242)">Click on the sun for Dark Mode</p>
 
   <div id="retrobg">
     <div id="retrobg-sky">
@@ -39,8 +40,10 @@
         <div class="retrobg-star" style="left: 95%; top:  5%; transform: scale( 1 );"></div>
         <div class="retrobg-star" style="left: 96%; top: 72%; transform: scale( 1 );"></div>
         <div class="retrobg-star" style="left: 98%; top: 70%; transform: scale( 3 );"></div>
+
       </div>
       <div id="retrobg-sunWrap">
+
         <div id="retrobg-sun"></div>
       </div>
       <div id="retrobg-mountains">
@@ -168,11 +171,15 @@
     
 
     <section id="startBox" class="sidebar">
-      <label for="player1_name"><b>Player 1:</b></label>
+      <label for="player1_name" style="color: rgb(71, 7, 7)":><b>Player 1:</b></label>
       <input type="text" id="player1_name" maxlength="20" placeholder="Player 'X'"/>
-      <label for="player2_name"><b>Player 2:</b></label>
+      <label for="player2_name"  style="color: rgb(149, 13, 13)"><b>Player 2:</b></label>
       <input type="text" id="player2_name" maxlength="20" placeholder="Player 'O'"/>
-      <button id="start" class="button_box">START</button>
+      <button id="start" class="button-pushable" role="button">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text">START</span>
+      </button>
     </section>
     <section id="field">
     </section>
@@ -184,15 +191,32 @@
         <b><p id="numberTurns">0</b></p>
       </div>
       <h2 id="status"></h2>
-      <button id="playAgain" class="button_box">PLAY AGAIN</button>
-      <button id="restart" class="button_box">RESTART</button>
-      <button id="instructions" class="button_box">Instructions</button>
-      <!-- Trigger/Open The Modal -->
-      
-      <!-- The Modal -->
+      <button id="playAgain" class="button-pushable" role="button">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text">PLAY AGAIN</span>
+      </button>
+      <p><br></p>
+      <button id="restart" class="button-pushable" role="button">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text">RESTART</span>
+      </button>
+      <p><br></p>
+      <button id="instructions" class="button-pushable" role="button">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text">Instructions</span>
+      </button>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span class="close1">&times;</span>
+          <p align="center"><h1>Time is over - You Lost</h1></p>
+          <p align="center" style="font-size:160%;color:rgb(255, 175, 56);">You Lost<br><br>Please Choose:<br>'Play Again' or 'Restart'</p>
+        </div>
+      </div>
       <div id="myModal" class="modal">
       
-        <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
           <p><h1>Tic Tac Toe - Instructions</h1>
@@ -224,12 +248,10 @@
         </div>
       </div>
   <script src="game_script.js"></script>
-<!-- </div> -->
 <div id="game-board">
 </div>
 <div id="output">
   <b style="color:rgb(255, 9, 9)">Time left: <span id="label"><span></b>
-    <p style="color:rgb(148, 0, 217)">Click on the sun <br> Dark Mode</p>
 </div>
 </section>
 </main>
