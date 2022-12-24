@@ -10,17 +10,17 @@ For running the game directly:
 1. From this repository download the project's directory - "Tic-Tac-Toe".
 2. Open the directory with file explorer.
 3. Click on the file - "index.html".
-4. If a web broswer is not defined to default - please choose a web broswer to open the file with.
+4. If a web broswer is not defined to default - please choose a web broswer to open the file with (E.G: Chrome, Edge, Firefox, Opera etc).
 5. Enjoy the game!
 
 For code view:
 1. From this repository download the project's directory - "Tic-Tac-Toe".
 2. Open the directory with file explorer.
 3. Open IDE "VS Code" - if not installed please visit the following link: https://code.visualstudio.com/download
-4. In VS Code click on "file" the top left corner of the top toolbar.
+4. In VS Code click on "File" on the top-left corner of the top toolbar.
 5. Select "open folder"
 6. Select the project's directory - "Tic-Tac-Toe" - in the downloaded location.
-7. Click on the left window and choose the desired HTML/CSS/JS file. If the window does not appear automatically - click on "Explorer" button on the top left corner on the left tool bar. The button has an icon with two paper pages, one after another.
+7. Click on the left window and choose the desired HTML/CSS/JS file. If the window does not appear automatically - click on "Explorer" button on the top-left corner on the left tool bar. The button has an icon with two paper pages, one after another.
 8. Enjoy the code!
 
 # Game Rules For Tic-Tac-Toe:
