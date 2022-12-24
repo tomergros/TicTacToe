@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Tic Tac Toe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+        rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">Tic Tac Toe</h1>
+  <main>
+    <section id="startBox" class="sidebar">
+      <label for="player1_name">Player 1:</label>
+      <input type="text" id="player1_name" maxlength="20" placeholder="Player 'X'"/>
+      <label for="player2_name">Player 2:</label>
+      <input type="text" id="player2_name" maxlength="20" placeholder="Player 'O'"/>
+      <button id="start" class="button_box">START</button>
+    </section>
+    <section id="field">
+    </section>
+    <section class="sidebar">
+      <p id="player1" class="button_box">-</p>
+      <p id="player2" class="button_box">-</p>
+      <div id="turns">
+        <p id="titleTurns">Number of turns</p>
+        <p id="numberTurns">0</p>
+      </div>
+      <h2 id="status"></h2>
+      <button id="playAgain" class="button_box">PLAY AGAIN</button>
+      <button id="restart" class="button_box">RESTART</button>
+      <div id="game-board">
+      </div>
+      <div id="output">
+        Time left: <span id="label"><span>
+      </div>
+    </section>
+  </main>
+
+  <script src="game_script.js"></script>
+</body>
+
+</html>

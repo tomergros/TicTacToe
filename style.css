@@ -1,0 +1,77 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  caret-color: transparent;
+  background: #0cd6f1fa;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  min-height: 65vh;
+  background: #fffcf6;
+}
+
+section {
+  text-align: center;
+  padding: 30px;
+  background: #f4e3d6;
+}
+
+.hidden {
+  display: none;
+}
+
+#field {
+  padding: 30px;
+  min-width: 20vh;
+}
+
+#container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.cell {
+  font-family: "Finger Paint", sans-serif;
+  color: #234355;
+  box-shadow: 0 0 0 1px #0b0f12;
+  border: 1px solid #161a1c;
+  cursor: pointer;
+  line-height: 1em;
+  background: #fdf4ce;
+}
+
+.sidebar {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#status  {flex: 4;}
+
+.button_box {
+  box-sizing: border-box;
+  background: #ffa78e;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin: 0 0 10px 0;
+  border: none;
+}
+button:hover {
+  background-color: #c47c00;
+}
+
+#titleTurns {
+  font-size: .8em;
+}
+#numberTurns {
+  font-size: 1.4em;
+  margin: 0;
+}
