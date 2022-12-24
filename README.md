@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
-                                                                 Tic-Tac-Toe - Written in HTML-CSS-JS
-                                                               Written by Tomer Grossman & Oriel Somech
+Tic-Tac-Toe - Written in HTML-CSS-JS
+Written by Tomer Grossman & Oriel Somech
 
 # Setup - Runing & Code View
 
