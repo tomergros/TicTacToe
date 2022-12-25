@@ -3,7 +3,7 @@ Tic-Tac-Toe - Written in HTML-CSS-JS
 
 Written by Tomer Grossman & Oriel Somech
 
-# Setup - Runing & Code View
+# Setup - Running & Code View
 
 For running the game directly:
 
